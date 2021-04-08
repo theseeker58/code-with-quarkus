@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings version="2.1"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <jaxb:globalBindings localScoping="toplevel">
+        <jaxb:serializable uid="1"/>
+        <jaxb:javaType name="java.util.Date"  xmlType="xsd:date" hasNsContext="false"
+            parseMethod="org.acme.adapters.DateAdapter.parseBasicIsoDate"
+            printMethod="org.acme.adapters.DateAdapter.printBasicIsoDate"/>
+
+    </jaxb:globalBindings>
+
+    <jaxb:bindings schemaLocation="books.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="org.acme.jaxb"/>
+        </jaxb:schemaBindings>
+
+    </jaxb:bindings>
+
+</jaxb:bindings>

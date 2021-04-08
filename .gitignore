@@ -1,0 +1,37 @@
+HELP.md
+target/
+*.log
+*.gz
+dependency-reduced-pom.xml
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+/src/test/resources/track.txt
+/src/test/resources/inputFiles/**
+/src/test/resources/cbi-sdd*.xml
+/src/test/resources/Sample_SDD_v.00.01.00.xml
